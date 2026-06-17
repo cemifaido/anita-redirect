@@ -204,10 +204,6 @@
       h1 { font-size: 1.5rem; }
       .logo-img, .logo { width: 64px; height: 64px; }
     }
-
-    @media (prefers-reduced-motion: reduce) {
-      #bg { display: none; }
-    }
   </style>
 </head>
 
@@ -275,8 +271,6 @@
     // meno pianeti/particelle su schermi piccoli, DPR limitato, pausa a tab nascosta,
     // nessuna dipendenza dal mouse (tilt solo come extra su desktop).
     (function () {
-      const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      if (reduce) return;
       const cv = document.getElementById('bg');
       const ctx = cv.getContext('2d');
       let W = 0, H = 0, DPR = 1, raf = 0;
