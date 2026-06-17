@@ -43,8 +43,8 @@
       background: rgba(15, 23, 42, 0.55);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 1.25rem;
-      padding: 2.5rem 2rem;
-      max-width: 440px;
+      padding: 2rem 1.75rem;
+      max-width: 420px;
       width: 100%;
       text-align: center;
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
@@ -53,32 +53,32 @@
     }
 
     .logo-img {
-      width: 76px;
-      height: 76px;
+      width: 68px;
+      height: 68px;
       object-fit: contain;
-      border-radius: 1rem;
-      margin-bottom: 1.25rem;
+      border-radius: 0.85rem;
+      margin-bottom: 0.75rem;
       box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
     }
 
     .logo {
-      width: 72px;
-      height: 72px;
-      border-radius: 1rem;
+      width: 68px;
+      height: 68px;
+      border-radius: 0.85rem;
       background: linear-gradient(135deg, #2563eb, #06b6d4);
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 1.25rem;
+      margin-bottom: 0.75rem;
       box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
-      font-size: 2rem;
+      font-size: 1.85rem;
       font-weight: 800;
       color: white;
       letter-spacing: -1px;
     }
 
     h1 {
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: 700;
       background: linear-gradient(90deg, #60a5fa, #22d3ee);
       -webkit-background-clip: text;
@@ -88,28 +88,28 @@
     }
 
     .subtitle {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: #94a3b8;
-      margin-bottom: 2rem;
+      margin-bottom: 1.25rem;
     }
 
     .info-box {
       background: rgba(37, 99, 235, 0.08);
       border: 1px solid rgba(37, 99, 235, 0.2);
       border-radius: 0.75rem;
-      padding: 1.25rem 1rem;
-      margin-bottom: 1.75rem;
+      padding: 1rem 0.85rem;
+      margin-bottom: 1.25rem;
       text-align: left;
     }
 
     .info-box p {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       color: #cbd5e1;
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
     .info-box p+p {
-      margin-top: 0.75rem;
+      margin-top: 0.6rem;
     }
 
     .info-box strong {
@@ -117,16 +117,16 @@
     }
 
     .resource-label {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: #64748b;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.35rem;
     }
 
     #resource-path {
       font-family: monospace;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: #22d3ee;
       word-break: break-all;
     }
@@ -135,9 +135,9 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.75rem 1.75rem;
-      border-radius: 0.65rem;
-      font-size: 0.95rem;
+      padding: 0.7rem 1.5rem;
+      border-radius: 0.6rem;
+      font-size: 0.92rem;
       font-weight: 600;
       text-decoration: none;
       transition: all 0.2s;
@@ -161,48 +161,60 @@
     .divider {
       border: none;
       border-top: 1px solid rgba(255, 255, 255, 0.07);
-      margin: 1.75rem 0 1.25rem;
+      margin: 1.25rem 0 0.85rem;
     }
 
     .help {
-      font-size: 0.83rem;
+      font-size: 0.8rem;
       color: #64748b;
-      line-height: 1.6;
+      line-height: 1.55;
     }
 
     .help .step {
       display: flex;
       align-items: flex-start;
-      gap: 0.6rem;
+      gap: 0.5rem;
       text-align: left;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
     }
 
     .step-num {
       flex-shrink: 0;
-      width: 1.3rem;
-      height: 1.3rem;
+      width: 1.2rem;
+      height: 1.2rem;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.07);
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 600;
       color: #94a3b8;
       margin-top: 0.05rem;
     }
 
     .footer {
-      margin-top: 2rem;
-      font-size: 0.75rem;
+      margin-top: 1.25rem;
+      font-size: 0.72rem;
       color: #334155;
     }
 
     @media (max-width: 480px) {
-      .card { padding: 2rem 1.25rem; }
-      h1 { font-size: 1.5rem; }
-      .logo-img, .logo { width: 64px; height: 64px; }
+      .card {
+        padding: 1.5rem 1rem;
+        max-width: 320px;
+        margin: auto;
+      }
+      h1 { font-size: 1.35rem; }
+      .subtitle { margin-bottom: 1rem; font-size: 0.8rem; }
+      .info-box { padding: 0.85rem 0.65rem; margin-bottom: 1rem; }
+      .info-box p { font-size: 0.82rem; }
+      .btn { padding: 0.6rem 1.15rem; font-size: 0.85rem; }
+      .divider { margin: 1rem 0 0.75rem; }
+      .logo-img, .logo { width: 52px; height: 52px; margin-bottom: 0.75rem; }
+      .help { font-size: 0.75rem; }
+      .help .step { gap: 0.35rem; margin-bottom: 0.35rem; }
+      .step-num { width: 1.1rem; height: 1.1rem; font-size: 0.65rem; }
     }
   </style>
 </head>
@@ -296,25 +308,32 @@
       function build() {
         const isSmall = small();
         const k = isSmall ? 0.7 : 1;            // scala dimensioni su mobile
-        const perSun = isSmall ? 3 : 5;          // pianeti per sole
-        const sunY = H * (isSmall ? 0.30 : 0.34);
-        const sep = W * (isSmall ? 0.22 : 0.20);
+        const perSun = isSmall ? 5 : 8;          // pianeti per sole
         const cx = W * 0.5;
+
+        // Sempre verticali: soli sopra e sotto la card
+        const r = (isSmall ? 40 : 46) * DPR * k;
         suns = [
-          { x: cx - sep, y: sunY, r: 46 * DPR * k, c: SUN_PAS },
-          { x: cx + sep, y: sunY, r: 46 * DPR * k, c: SUN_IMG },
+          { x: cx, y: Math.max(H * 0.11, 65 * DPR), r: r, c: SUN_PAS },
+          { x: cx, y: Math.min(H * 0.89, H - 65 * DPR), r: r, c: SUN_IMG },
         ];
+
         planets = [];
         suns.forEach((s, si) => {
           for (let i = 0; i < perSun; i++) {
+            const rx = (38 + i * 13) * DPR * k;
+            const distY = Math.abs(s.y - H * 0.5);
+            const ry = distY * (0.8 + i * 0.1); // Spazia l'altezza delle orbite per attraversare il centro
+
             planets.push({
               sun: si,
-              rx: (90 + i * 34) * DPR * k,
-              ry: (52 + i * 16) * DPR * k,
-              base: (6 + Math.random() * 9) * DPR * k,
-              speed: 0.0016 + i * 0.0006,
+              rx: rx,
+              ry: ry,
+              base: (6 + Math.random() * 8) * DPR * k,
+              speed: 0.0013 + i * 0.0004,
               ang: Math.random() * Math.PI * 2,
-              tilt: 0.3 + i * 0.14,
+              tilt: 0.15,
+              slant: ((si === 0 ? -0.22 : 0.22) + (i - 2) * 0.06), // Inclinazione alternata per creare l'effetto incrocio a elica
               col: PLANET[(si * perSun + i) % PLANET.length],
             });
           }
@@ -361,7 +380,20 @@
           pl.ang += pl.speed;
           const s = suns[pl.sun];
           const ca = Math.cos(pl.ang), sa = Math.sin(pl.ang);
-          const lx = pl.rx * ca, ly = pl.ry * sa, lz = pl.rx * sa * 0.6;
+          let lx = pl.rx * ca;
+          let ly = pl.ry * sa;
+
+          // Applico lo slant (rotazione nel piano XY) per creare orbite verticali inclinate
+          if (pl.slant) {
+            const cosS = Math.cos(pl.slant);
+            const sinS = Math.sin(pl.slant);
+            const tx = lx * cosS - ly * sinS;
+            const ty = lx * sinS + ly * cosS;
+            lx = tx;
+            ly = ty;
+          }
+
+          const lz = pl.rx * sa * 0.6;
           const cT = Math.cos(pl.tilt + tiltY + autoT), sT = Math.sin(pl.tilt + tiltY + autoT);
           pl._x = s.x + lx * Math.cos(tiltX) - lz * Math.sin(tiltX);
           pl._y = s.y + ly * cT - lz * sT;
@@ -407,6 +439,7 @@
       function stop() { cancelAnimationFrame(raf); raf = 0; }
 
       window.addEventListener('resize', resize);
+      window.addEventListener('orientationchange', resize);
       document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
       resize();
       start();
